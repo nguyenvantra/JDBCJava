@@ -66,11 +66,10 @@ public class StudentDAOImp implements StudentDAO {
 			con = GetConnection.connectDb();
 
 			String query = "select * from " + Constant.TABLE_NAME + " where id = ?";
-			System.out.println(query);
 			preparedStatement = con.prepareStatement(query);
 			preparedStatement.setInt(1, id);
 
-			ResultSet resultSet = preparedStatement.executeQuery(query);
+			ResultSet resultSet = preparedStatement.executeQuery();
 			if (resultSet.next()) {
 				do {
 					student = new Student(resultSet.getInt(1),

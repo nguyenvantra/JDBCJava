@@ -10,7 +10,7 @@ public class App {
 		StudentDAOImp studentDAOImp = new StudentDAOImp();
 
 		/*
-		 * test method create()
+		 * test method create(Student student)
 		 */
 //		 Student student = new Student("NguyenVanTra", "HoChiMinh", "Java");
 //		 studentDAOImp.create(student);
@@ -29,12 +29,23 @@ public class App {
 		/*
 		 * test method findById(int id)
 		 */
+//		Student student = studentDAOImp.findById(1);
+//		System.out.println(student.getId() + 
+//				" " + student.getName() +
+//				" " + student.getAddress() + 
+//				" " + student.getSkill());
 		
-		Student student = studentDAOImp.findById(1);
-		System.out.println(student.getId() + 
-				" " + student.getName() +
-				" " + student.getAddress() + 
-				" " + student.getSkill());
-
+		/*
+		 * test method count()
+		 */
+//		System.out.println(studentDAOImp.count());
+		
+		/*
+		 * test method update(Student student)
+		 */
+//		Student student = new Student(1,"Darkness", "HoChiMinh", "Java");
+//		studentDAOImp.update(student);
+		
+		
 	}
 }
